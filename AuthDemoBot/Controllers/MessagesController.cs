@@ -72,7 +72,7 @@ namespace AuthDemoBot
                 else
                 {
                     ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-                    Activity reply = activity.CreateReply("# iHR Bot Help\n\nType the following command.\n\nlogin -- You will login to iHR\n\nFor you -- Gets you the 'for you' list");
+                    Activity reply = activity.CreateReply("# iHR Bot \n\nType the following command.\n\nradio -- Gets you top 10 Radio Stations\n\nlogin -- You will login to iHR\n\nfor you -- Gets you top 10 For You Stations");
                     await connector.Conversations.ReplyToActivityAsync(reply);
                 }
             }
